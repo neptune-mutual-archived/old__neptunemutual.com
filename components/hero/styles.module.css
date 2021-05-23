@@ -1,0 +1,50 @@
+.hero {
+  @apply flex justify-center mt-4 px-4;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: url('/images/patterns/hero.svg'),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 28.52%,
+      rgba(255, 255, 255, 0.06) 87.44%
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 250px;
+
+  @screen md {
+    @apply mt-8;
+    padding-bottom: 760px;
+  }
+}
+
+.carousel {
+  @apply flex justify-center pb-12;
+  margin-top: -224px;
+
+  @screen md {
+    @apply pb-24;
+    margin-top: -760px;
+  }
+}
+
+.content_h1 {
+  @apply font-medium font-numbers text-3xl;
+  @screen md {
+    @apply font-medium text-5xl leading-normal;
+  }
+}
+
+.content_p {
+  @apply max-w-4xl font-numbers text-lg text-gray-400 mt-4;
+  @screen md {
+    @apply text-xl leading-relaxed;
+  }
+}
+
+.content_cta {
+  @apply mt-6 flex flex-wrap justify-center gap-5 md:gap-8;
+  @screen md {
+    @apply mt-14;
+  }
+}

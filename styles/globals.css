@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply text-gray-100;
+  background-color: #080808;
+}
+
+ul.slick-dots {
+  @apply flex justify-center gap-2 p-4;
+}
+
+ul.slick-dots li button {
+  @apply block text-transparent w-2 h-2 md:w-2.5 md:h-2.5 p-1 bg-gray-600 rounded-full cursor-pointer border-0 outline-none;
+  font-size: 0;
+  line-height: 0;
+}
+
+ul.slick-dots li.slick-active button {
+  @apply bg-gray-400;
+}
