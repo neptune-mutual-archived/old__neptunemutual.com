@@ -1,7 +1,7 @@
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 
-const imgs = [
+export const imgs = [
   {
     src: '/images/slider/Coverage.png',
     alt: 'Cover'

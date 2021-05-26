@@ -1,7 +1,7 @@
 import { Card } from './card'
 import styles from './styles.module.css'
 
-const data = [
+export const data = [
   {
     title: 'Transfer Risk',
     iconSrc: '/icons/benefits/Transfer_Risk.svg',
