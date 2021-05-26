@@ -1,4 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { imgs as sliderImages } from '../components/hero/carousel'
+import { data as manageRiskData } from '../components/benefits/tabs/manage-risk'
+import { data as provideLiquidityData } from '../components/benefits/tabs/provide-liquidity'
+
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -11,6 +15,15 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          {sliderImages.map(x=>{
+            return <link rel="preload" href={x.src} as='image' />
+          })}
+          {manageRiskData.map(x=>{
+            return <link rel="preload" href={x.iconSrc} as='image' />
+          })}
+          {provideLiquidityData.map(x=>{
+            return <link rel="preload" href={x.iconSrc} as='image' />
+          })}
           <link
             rel='apple-touch-icon'
             sizes='180x180'

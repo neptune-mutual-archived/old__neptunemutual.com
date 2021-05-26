@@ -66,7 +66,7 @@ const iconLinks = [
   },
   {
     name: 'Medium',
-    href: '',
+    href: 'https://neptunemutual.medium.com',
     iconSrc: '/icons/footer/medium.svg'
   },
   {
