@@ -14,7 +14,7 @@ export const RoadmapImage = () => {
       />
       <img
         src='/images/roadmap/mobile.svg'
-        alt='Neptune Mutual'
+        alt='Roadmap'
         className='w-full'
         loading='lazy'
       />

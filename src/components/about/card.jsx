@@ -3,7 +3,7 @@ export const Card = ({ icon, title, content, className }) => {
   return (
     <div className='flex flex-col items-start'>
       <div className={className} data-sal-duration='400' data-sal='zoom-in'>
-        <img className='block w-6 h-6' src={icon} alt={title} loading='lazy' />
+        <img className='block w-6 h-6' src={icon} alt={title} loading='lazy' width='24' height='24'/>
       </div>
       <h3
         className='mt-4 font-numbers font-medium text-xl md:text-2xl text-white'

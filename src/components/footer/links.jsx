@@ -5,7 +5,8 @@ import {
   BECOME_CONTRIBUTOR_URL,
   COMMUNITY_GUIDELINES_URL,
   TERMS_OF_SERVICE_URL,
-  CAREERS_URL
+  CAREERS_URL,
+  PARTNERSHIP_URL
 } from '../../utils/config'
 
 const textLinks = [
@@ -24,6 +25,10 @@ const textLinks = [
   {
     name: 'Become a Contributor',
     href: BECOME_CONTRIBUTOR_URL
+  },
+  {
+    name: 'Partnership',
+    href: PARTNERSHIP_URL
   },
   {
     name: 'Community Guideline',
