@@ -4,14 +4,14 @@ import { classNames } from '../../../utils/classnames'
 import { ManageRisk } from './manage-risk'
 import { ProvideLiquidity } from './provide-liquidity'
 import * as styles from './styles.module.css'
-import sal from 'sal.js'
+// import sal from 'sal.js'
 
 export const Tabs = () => {
   const [tab, setTab] = useState('1')
 
-  React.useEffect(() => {
-    sal()
-  }, [tab])
+  // React.useEffect(() => {
+  //   sal()
+  // }, [tab])
 
   const changeTab = (id) => {
     return () => setTab(id)

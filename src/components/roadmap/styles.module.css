@@ -1,18 +1,32 @@
 .roadmap {
   @apply flex justify-center pt-12 pb-12;
-  background: url('/images/patterns/roadmap.svg'), #100e16;
+  background: url('/images/patterns/roadmap.png'), #100e16;
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
 
   @screen md {
     @apply pt-24 pb-24;
-    background: url('/images/patterns/roadmap.svg'), #100e16;
-    background-repeat: no-repeat;
     background-position: right;
   }
 }
 
 .content_p {
   @apply mb-6;
+}
+
+.desktop {
+  display: none;
+
+  @screen md {
+    display: block;
+  }
+}
+
+.mobile {
+  display: block;
+
+  @screen md {
+    display: none;
+  }
 }

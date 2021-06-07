@@ -1,6 +1,6 @@
 .tabs {
   @apply flex justify-center mt-12;
-  background: url('/images/patterns/right.svg');
+  background: url('/images/patterns/right.png');
   background-repeat: no-repeat;
   background-position: right bottom;
 }
