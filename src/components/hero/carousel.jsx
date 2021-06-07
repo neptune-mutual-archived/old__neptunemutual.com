@@ -1,26 +1,8 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
-
-export const imgs = [
-  {
-    src: '../../images/slider/Coverage.png',
-    alt: 'Cover'
-  },
-  {
-    src: '../../images/slider/Prediction market.png',
-    alt: 'Prediction Market'
-  },
-  {
-    src: '../../images/slider/Farming.png',
-    alt: 'Farming'
-  },
-  {
-    src: '../../images/slider/Bond.png',
-    alt: 'Bond'
-  }
-]
 
 const Dot = ({ className, children }) => {
   return (
@@ -32,6 +14,42 @@ const Dot = ({ className, children }) => {
 }
 
 export const Carousel = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      image1: file(relativePath: { eq: "slider/Coverage.png" }) {
+        ...carouselImage
+      }
+      image2: file(relativePath: { eq: "slider/Prediction market.png" }) {
+        ...carouselImage
+      }
+      image3: file(relativePath: { eq: "slider/Farming.png" }) {
+        ...carouselImage
+      }
+      image4: file(relativePath: { eq: "slider/Bond.png" }) {
+        ...carouselImage
+      }
+    }
+  `)
+
+  const imgs = [
+    {
+      image: getImage(data.image1),
+      alt: 'Cover'
+    },
+    {
+      image: getImage(data.image2),
+      alt: 'Prediction Market'
+    },
+    {
+      image: getImage(data.image3),
+      alt: 'Farming'
+    },
+    {
+      image: getImage(data.image4),
+      alt: 'Bond'
+    }
+  ]
+
   const appendDots = (dots) => {
     return (
       <ul>
@@ -58,46 +76,15 @@ export const Carousel = () => {
   return (
     <div className='mt-4 md:mt-16 px-2 w-full' style={{ maxWidth: '860px' }}>
       <Slider {...settings}>
-        <div key={imgs[0].alt} className='px-4'>
-          <StaticImage
-            src='../../images/slider/Coverage.png'
-            alt={imgs[0].alt}
-            width={800}
-            loading='eager'
-            formats={['AUTO', 'WEBP', 'AVIF']}
-            className='block max-w-full rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden border border-gray-800'
-          />
-        </div>
-        <div key={imgs[1].alt} className='px-4'>
-          <StaticImage
-            src='../../images/slider/Prediction market.png'
-            alt={imgs[1].alt}
-            width={800}
-            loading='eager'
-            formats={['AUTO', 'WEBP', 'AVIF']}
-            className='block max-w-full rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden border border-gray-800'
-          />
-        </div>
-        <div key={imgs[2].alt} className='px-4'>
-          <StaticImage
-            src='../../images/slider/Farming.png'
-            alt={imgs[2].alt}
-            width={800}
-            loading='eager'
-            formats={['AUTO', 'WEBP', 'AVIF']}
-            className='block max-w-full rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden border border-gray-800'
-          />
-        </div>
-        <div key={imgs[3].alt} className='px-4'>
-          <StaticImage
-            src='../../images/slider/Bond.png'
-            alt={imgs[3].alt}
-            width={800}
-            loading='eager'
-            formats={['AUTO', 'WEBP']}
-            className='block max-w-full rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden border border-gray-800'
-          />
-        </div>
+        {imgs.map((img) => (
+          <div key={img.alt} className='px-4'>
+            <GatsbyImage
+              image={img.image}
+              alt={img.alt}
+              className='block max-w-full rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden border border-gray-800'
+            />
+          </div>
+        ))}
       </Slider>
     </div>
   )

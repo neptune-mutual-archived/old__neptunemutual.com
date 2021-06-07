@@ -1,6 +1,6 @@
 .about {
   @apply flex justify-center pt-12 pb-12;
-  background-image: url('/images/patterns/left.svg');
+  background-image: url('/images/patterns/left.png');
   background-repeat: no-repeat;
   background-position: left bottom;
 

@@ -1,26 +1,142 @@
 import * as React from 'react'
-const data = [
-  { name: 'Binance Smart Chain', logoSrc: '/logos/Binance Smart Chain.svg' },
-  { name: 'Ethereum', logoSrc: '/logos/Ethereum.svg' },
-  { name: 'PancakeSwap Exchange', logoSrc: '/logos/PancakeSwap Exchange.svg' },
-  { name: 'The Graph Protocol', logoSrc: '/logos/The Graph Protocol.svg' },
-  { name: 'Next', logoSrc: '/logos/Next.svg' },
-  { name: 'Band Protocol', logoSrc: '/logos/band-protocol.svg' },
-  { name: 'OpenZeppelin', logoSrc: '/logos/OpenZeppelin.svg' },
-  { name: 'Solidity', logoSrc: '/logos/Solidity.svg' },
-  { name: 'Truffle Suite', logoSrc: '/logos/Truffle Suite.svg' },
-  { name: 'React', logoSrc: '/logos/React.svg' },
-  { name: 'BSC Scan', logoSrc: '/logos/bscscan.svg' },
-  { name: 'MetaMask', logoSrc: '/logos/MetaMask.svg' },
-  { name: 'Ethers.js', logoSrc: '/logos/ethers-js.svg' },
-  { name: 'Interplanetary File System', logoSrc: '/logos/ipfs.svg' },
-  { name: 'Visual Studio Code', logoSrc: '/logos/Visual Studio Code.svg' },
-  { name: 'Javascript Standard', logoSrc: '/logos/Javascript Standard.svg' },
-  { name: 'Cloudflare', logoSrc: '/logos/Cloudflare.svg' },
-  { name: 'Node.js', logoSrc: '/logos/Node.js.svg' }
-]
+import { graphql, useStaticQuery } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 export const Technologies = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      image1: file(relativePath: { eq: "logos/Binance Smart Chain.png" }) {
+        ...technologyLogo
+      }
+      image2: file(relativePath: { eq: "logos/Ethereum.png" }) {
+        ...technologyLogo
+      }
+      image3: file(relativePath: { eq: "logos/PancakeSwap Exchange.png" }) {
+        ...technologyLogo
+      }
+      image4: file(relativePath: { eq: "logos/The Graph Protocol.png" }) {
+        ...technologyLogo
+      }
+      image5: file(relativePath: { eq: "logos/Next.png" }) {
+        ...technologyLogo
+      }
+      image6: file(relativePath: { eq: "logos/band-protocol.png" }) {
+        ...technologyLogo
+      }
+      image7: file(relativePath: { eq: "logos/OpenZeppelin.png" }) {
+        ...technologyLogo
+      }
+      image8: file(relativePath: { eq: "logos/Solidity.png" }) {
+        ...technologyLogo
+      }
+      image9: file(relativePath: { eq: "logos/Truffle Suite.png" }) {
+        ...technologyLogo
+      }
+      image10: file(relativePath: { eq: "logos/React.png" }) {
+        ...technologyLogo
+      }
+      image11: file(relativePath: { eq: "logos/bscscan.png" }) {
+        ...technologyLogo
+      }
+      image12: file(relativePath: { eq: "logos/MetaMask.png" }) {
+        ...technologyLogo
+      }
+      image13: file(relativePath: { eq: "logos/ethers-js.png" }) {
+        ...technologyLogo
+      }
+      image14: file(relativePath: { eq: "logos/ipfs.png" }) {
+        ...technologyLogo
+      }
+      image15: file(relativePath: { eq: "logos/Visual Studio Code.png" }) {
+        ...technologyLogo
+      }
+      image16: file(relativePath: { eq: "logos/Javascript Standard.png" }) {
+        ...technologyLogo
+      }
+      image17: file(relativePath: { eq: "logos/Cloudflare.png" }) {
+        ...technologyLogo
+      }
+      image18: file(relativePath: { eq: "logos/Node.js.png" }) {
+        ...technologyLogo
+      }
+    }
+  `)
+
+  const imgs = [
+    {
+      image: getImage(data.image1),
+      name: 'Binance Smart Chain'
+    },
+    {
+      image: getImage(data.image2),
+      name: 'Ethereum'
+    },
+    {
+      image: getImage(data.image3),
+      name: 'PancakeSwap Exchange'
+    },
+    {
+      image: getImage(data.image4),
+      name: 'The Graph Protocol'
+    },
+    {
+      image: getImage(data.image5),
+      name: 'Next'
+    },
+    {
+      image: getImage(data.image6),
+      name: 'Band Protocol'
+    },
+    {
+      image: getImage(data.image7),
+      name: 'OpenZeppelin'
+    },
+    {
+      image: getImage(data.image8),
+      name: 'Solidity'
+    },
+    {
+      image: getImage(data.image9),
+      name: 'Truffle Suite'
+    },
+    {
+      image: getImage(data.image10),
+      name: 'React'
+    },
+    {
+      image: getImage(data.image11),
+      name: 'BSC Scan'
+    },
+    {
+      image: getImage(data.image12),
+      name: 'MetaMask'
+    },
+    {
+      image: getImage(data.image13),
+      name: 'Ethers.js'
+    },
+    {
+      image: getImage(data.image14),
+      name: 'Interplanetary File System'
+    },
+    {
+      image: getImage(data.image15),
+      name: 'Visual Studio Code'
+    },
+    {
+      image: getImage(data.image16),
+      name: 'Javascript Standard'
+    },
+    {
+      image: getImage(data.image17),
+      name: 'Cloudflare'
+    },
+    {
+      image: getImage(data.image18),
+      name: 'Node.js'
+    }
+  ]
+
   return (
     <div
       id='technologies'
@@ -30,16 +146,16 @@ export const Technologies = () => {
         <h2 className='text-center font-numbers font-semibold text-black text-2xl md:text-4xl mb-16'>
           Technologies
         </h2>
-        <div className='flex flex-wrap gap-12 md:gap-24 justify-center'>
-          {data.map((x, i) => (
-            <img
+        <div className='flex flex-wrap gap-x-8 gap-y-12 md:gap-24 justify-center'>
+          {imgs.map((img, i) => (
+            <GatsbyImage
               key={i}
-              src={x.logoSrc}
-              alt={x.name}
-              className='h-10 md:h-14'
-              loading='lazy'
+              image={img.image}
+              alt={img.name}
               data-sal-duration='400'
               data-sal='zoom-in'
+              className='h-10 md:h-14'
+              objectFit='contain'
             />
           ))}
         </div>
