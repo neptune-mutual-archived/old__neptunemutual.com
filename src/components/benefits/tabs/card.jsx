@@ -9,8 +9,8 @@ export const Card = ({ iconSrc, title, content }) => {
         alt={title}
         data-sal-duration='400'
         data-sal='zoom-in'
-        width="154"
-        height="154"
+        width='154'
+        height='154'
       />
       <p className='text-center'>{content}</p>
     </div>

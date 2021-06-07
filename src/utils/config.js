@@ -1,3 +1,5 @@
+export const isBrowser = typeof window !== 'undefined'
+
 export const APP_URL = 'https://app.neptunemutual.com/'
 export const BOND_URL = 'https://app.neptunemutual.com/bond'
 export const POOL_URL = 'https://app.neptunemutual.com/pool'

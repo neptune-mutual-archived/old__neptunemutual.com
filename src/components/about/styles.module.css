@@ -1,7 +1,7 @@
 .about {
-  @apply flex justify-center pt-12 pb-12;
-  background-image: url('/images/patterns/left.png');
+  @apply w-full pt-12 pb-12;
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: left bottom;
 
   @screen md {

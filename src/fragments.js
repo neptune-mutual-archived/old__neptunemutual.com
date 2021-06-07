@@ -26,3 +26,11 @@ export const technologyLogo = graphql`
     }
   }
 `
+
+export const bgPattern = graphql`
+  fragment bgPattern on File {
+    childImageSharp {
+      gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+    }
+  }
+`

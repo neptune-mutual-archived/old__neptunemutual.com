@@ -1,7 +1,12 @@
+import * as React from 'react'
+import { LanguageProvider } from './src/i18n'
+
 import './src/styles/global.css'
-import React from 'react'
+import { isBrowser } from './src/utils/config'
 
 export const onRenderBody = ({ setPostBodyComponents }) => {
+  if (!isBrowser) return undefined
+
   setPostBodyComponents([
     <script
       key='gleam#1'
@@ -16,3 +21,7 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
     />
   ])
 }
+
+export const wrapRootElement = ({ element }) => (
+  <LanguageProvider>{element}</LanguageProvider>
+)

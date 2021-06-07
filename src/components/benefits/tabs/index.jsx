@@ -1,5 +1,9 @@
 import * as React from 'react'
 import { useState } from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import { getImage, GatsbyImage } from 'gatsby-plugin-image'
+import { BgImage } from 'gbimage-bridge'
+
 import { classNames } from '../../../utils/classnames'
 import { ManageRisk } from './manage-risk'
 import { ProvideLiquidity } from './provide-liquidity'
@@ -8,6 +12,16 @@ import * as styles from './styles.module.css'
 
 export const Tabs = () => {
   const [tab, setTab] = useState('1')
+
+  const { pattern } = useStaticQuery(graphql`
+    query {
+      pattern: file(relativePath: { eq: "patterns/right.png" }) {
+        ...bgPattern
+      }
+    }
+  `)
+
+  const image = getImage(pattern)
 
   // React.useEffect(() => {
   //   sal()
@@ -18,7 +32,7 @@ export const Tabs = () => {
   }
 
   return (
-    <div className={styles.tabs}>
+    <BgImage Tag='div' className={styles.tabs} image={image}>
       <div className='w-full max-w-screen-2xl'>
         <div className='w-full flex justify-center'>
           <button
@@ -42,7 +56,7 @@ export const Tabs = () => {
         </div>
         {tab === '1' ? <ManageRisk /> : null}
         {tab === '2' ? <ProvideLiquidity /> : null}
-      </div>
-    </div>
+      </div>{' '}
+    </BgImage>
   )
 }
