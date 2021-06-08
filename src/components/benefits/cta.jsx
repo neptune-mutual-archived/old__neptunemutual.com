@@ -11,10 +11,22 @@ export const CTA = () => {
         pools. Show us your support today.
       </h4>
       <div className='flex flex-wrap justify-center gap-6'>
-        <OutlineLink href={BOND_URL} external wide data-sal-duration="500" data-sal='zoom-in'>
+        <OutlineLink
+          href={BOND_URL}
+          external
+          wide
+          data-sal-duration='500'
+          data-sal='zoom-in'
+        >
           bond nep
         </OutlineLink>
-        <FilledLink href={POOL_URL} external wide data-sal-duration="500" data-sal='zoom-in'>
+        <FilledLink
+          href={POOL_URL}
+          external
+          wide
+          data-sal-duration='500'
+          data-sal='zoom-in'
+        >
           nep pool
         </FilledLink>
       </div>

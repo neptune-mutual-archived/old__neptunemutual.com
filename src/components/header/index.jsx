@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { DOCUMENTATION_URL, PROTOTYPE_URL } from '../../utils/config'
-import { OutlineLink } from '../buttons/outline'
+import { DOCUMENTATION_URL } from '../../utils/config'
+import { LanguageSelector } from './language-selector'
 import * as styles from './styles.module.css'
 
 export const Header = () => {
@@ -23,9 +23,7 @@ export const Header = () => {
           <a href={DOCUMENTATION_URL} target='_blank' rel='noopener noreferrer'>
             documentation
           </a>
-          <OutlineLink href={PROTOTYPE_URL} external>
-            prototype
-          </OutlineLink>
+          <LanguageSelector />
         </nav>
       </div>
     </header>

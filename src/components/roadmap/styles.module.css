@@ -1,9 +1,8 @@
 .roadmap {
   @apply flex justify-center pt-12 pb-12;
-  background: url('/images/patterns/roadmap.png'), #100e16;
   background-repeat: no-repeat;
-  background-position: top;
   background-size: contain;
+  background-position: top right;
 
   @screen md {
     @apply pt-24 pb-24;

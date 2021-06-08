@@ -1,12 +1,7 @@
 .hero {
   @apply flex justify-center mt-4 px-4;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  background: url('/images/patterns/hero.png'),
-    linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.05) 28.52%,
-      rgba(255, 255, 255, 0.06) 87.44%
-    );
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
