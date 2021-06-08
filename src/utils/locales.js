@@ -1,4 +1,4 @@
-import { countries, getFlag } from './countries'
+import emojiSupport from 'detect-emoji-support'
 
 export const SUPPORTED_LOCALES = [
   'af-ZA',
@@ -70,13 +70,16 @@ export const LOCALE_LABEL = {
   'zh-TW': '中文 ( 台灣 )'
 }
 
+export const isEmojiSupported = emojiSupport()
 export const localeOptions = [
   {
     locale: 'en-US',
-    countryFlag: getFlag('United States')
+    countryCode: 'US',
+    countryLabel: 'United States'
   },
   {
     locale: 'es-ES',
-    countryFlag: getFlag('Spain')
+    countryCode: 'ES',
+    countryLabel: 'Spain'
   }
 ]

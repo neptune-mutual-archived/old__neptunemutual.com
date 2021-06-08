@@ -1,38 +1,20 @@
 import * as React from 'react'
 import { Fragment, useState } from 'react'
+import ReactCountryFlag from 'react-country-flag'
 import { Listbox, Transition } from '@headlessui/react'
 import { useLanguageContext } from '../../i18n'
-import { localeOptions } from '../../utils/locales'
-
-// export const LanguageSelector = () => {
-//   const { locale, setLocale } = useLanguageContext()
-
-//   const onSelectLocale = (ev) => {
-//     const selected = ev.target.value
-//     setLocale(selected)
-//   }
-
-//   return (
-//     <>
-//       <select
-//         onChange={onSelectLocale}
-//         className='inline-flex justify-center px-4 py-2 text-sm font-medium leading-5 text-gray-400 transition duration-150 ease-in-out bg-transparent border border-gray-400 rounded-md active:bg-gray-50 active:text-gray-200'
-//       >
-//         {localeOptions.map((x) => (
-//           <option value={x.locale} selected={x.locale === locale}>
-//             <img src={x.countryFlag} alt={x.locale} /> {x.locale.split('-')[0].toUpperCase()}
-//           </option>
-//         ))}
-//       </select>
-//     </>
-//   )
-// }
+import { isEmojiSupported, localeOptions } from '../../utils/locales'
 
 const LanguageOption = ({ option }) => {
   return (
-    <div className='inline-flex items-center gap-2'>
-      <img className='w-7' src={option.countryFlag} alt={option.locale} />
-      <span>{option.locale.split('-')[0].toUpperCase()}</span>
+    <div className='inline-flex items-center gap-1'>
+      <ReactCountryFlag
+        countryCode={option.countryCode}
+        style={{ fontSize: '1rem' }}
+        aria-label={option.countryLabel}
+        svg={!isEmojiSupported}
+      />{' '}
+      {option.locale.split('-')[0].toUpperCase()}
     </div>
   )
 }
@@ -79,7 +61,7 @@ export const LanguageSelector = () => {
             leaveFrom='opacity-100'
             leaveTo='opacity-0'
           >
-            <Listbox.Options className='absolute w-full py-1 mt-1 overflow-auto text-base bg-gray-900 rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'>
+            <Listbox.Options className='absolute w-full py-1 mt-1 z-10 overflow-auto text-base bg-gray-900 rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'>
               {localeOptions.map((opt, optIdx) => (
                 <Listbox.Option
                   key={optIdx}
