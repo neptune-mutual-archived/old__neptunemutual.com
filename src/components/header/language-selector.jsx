@@ -38,8 +38,15 @@ const SelectorIcon = () => {
 }
 
 export const LanguageSelector = () => {
-  const [selected, setSelected] = useState(localeOptions[0])
   const { locale, setLocale } = useLanguageContext()
+  const [selected, setSelected] = useState(()=>{
+    try {
+      localeOptions.find(x=>x.locale===locale)
+    } catch (error) {
+      console.error(error);
+    }
+    return localeOptions[0]
+  })
 
   React.useEffect(() => {
     setLocale(selected.locale)
