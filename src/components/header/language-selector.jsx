@@ -41,7 +41,7 @@ export const LanguageSelector = () => {
   const { locale, setLocale } = useLanguageContext()
   const [selected, setSelected] = useState(()=>{
     try {
-      localeOptions.find(x=>x.locale===locale)
+      return localeOptions.find(x=>x.locale===locale)
     } catch (error) {
       console.error(error);
     }
