@@ -1,0 +1,8 @@
+# For all paths:
+/*
+  # Only allow my site to frame itself
+  X-Frame-Options: SAMEORIGIN
+  # Prevent browsers from incorrectly detecting non-scripts as scripts
+  X-Content-Type-Options: nosniff
+  # Block pages from loading when they detect reflected XSS attacks
+  X-XSS-Protection: 1; mode=block

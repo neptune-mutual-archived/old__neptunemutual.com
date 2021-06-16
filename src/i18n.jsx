@@ -102,13 +102,12 @@ export function LanguageProvider({ children }) {
   }, [activeLocale])
 
   // prevent the app from rendering with placeholder text before the locale is loaded
-  if (!loaded) return null
 
   return (
     <LanguageContext.Provider
       value={{
-        locale: activeLocale,
-        setLocale: setActiveLocale
+        locale: activeLocale || DEFAULT_LOCALE,
+        setLocale: !loaded ? () => {} : setActiveLocale
       }}
     >
       <I18nProvider forceRenderOnLocaleChange={false} i18n={i18n}>
