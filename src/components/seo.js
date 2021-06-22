@@ -19,6 +19,7 @@ function Seo({ description, lang = 'en', meta, title }) {
             title
             description
             author
+            ogImage
           }
         }
       }
@@ -27,6 +28,7 @@ function Seo({ description, lang = 'en', meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const ogImage = site.siteMetadata?.ogImage
 
   return (
     <Helmet
@@ -49,6 +51,10 @@ function Seo({ description, lang = 'en', meta, title }) {
           content: metaDescription
         },
         {
+          property: `og:image`,
+          content: ogImage
+        },
+        {
           property: `og:type`,
           content: `website`
         },
@@ -59,6 +65,14 @@ function Seo({ description, lang = 'en', meta, title }) {
         {
           name: `twitter:creator`,
           content: site.siteMetadata?.author || ``
+        },
+        {
+          name: `twitter:site`,
+          content: site.siteMetadata?.author || ``
+        },
+        {
+          name: `twitter:image`,
+          content: ogImage
         },
         {
           name: `twitter:title`,

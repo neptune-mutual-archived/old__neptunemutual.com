@@ -4,7 +4,8 @@ module.exports = {
   siteMetadata: {
     title: `Neptune Mutual`,
     description: `Neptune Mutual provides you with guaranteed stablecoin liquidity to reduce your risk exposure by hedging against possible capital risks and smart contract vulnerabilities.`,
-    author: `@neptunemutual`
+    author: `@neptunemutual`,
+    ogImage: `https://neptunemutual.com/og/home.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

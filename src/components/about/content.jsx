@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { GET_TOKENS_URL } from '../../utils/config'
+import { GET_TOKENS_URL, GOVERNANCE_URL } from '../../utils/config'
 import { OutlineLink } from '../buttons/outline'
 
 export const Content = () => {
@@ -20,7 +20,7 @@ export const Content = () => {
       <ul className='pl-6 list-disc list-outside mb-8'>
         <li>Use NEP to stake and create contracts and markets</li>
         <li>Burn NEP to create contracts and markets</li>
-        <li>Use NEP to vote in the governance of the platform’s future</li>
+        <li>Use NEP to <a href={GOVERNANCE_URL} target="_blank" rel="noopener noreferrer">vote in the governance</a> of the platform’s future</li>
         <li>
           Lock NEP to provide liquidity, secure the protocol, and yield
           additional rewards
