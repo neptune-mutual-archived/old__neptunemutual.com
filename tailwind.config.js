@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
+      'light-blue': colors.sky,
       transparent: 'transparent',
       current: 'currentColor'
     },
