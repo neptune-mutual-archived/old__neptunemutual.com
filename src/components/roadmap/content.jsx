@@ -10,7 +10,7 @@ export const Content = () => {
       </h2>
       <p className={styles.content_p}>
         Unlike some projects you might have seen, we don’t have any unrealistic
-        roadmap. We’re starting with the prediction market and smart contract
+        roadmap. We’re starting with the smart contract
         and exchange cover and then focusing on enhancing the awesome user
         experience research we’ve already completed.
       </p>

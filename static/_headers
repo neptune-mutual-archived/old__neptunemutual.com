@@ -4,5 +4,6 @@
   X-Frame-Options: SAMEORIGIN
   # Prevent browsers from incorrectly detecting non-scripts as scripts
   X-Content-Type-Options: nosniff
+  Content-Security-Policy: default-src 'self'; script-src 'report-sample' 'self'; style-src 'report-sample' 'self' https://fonts.googleapis.com; object-src 'none'; base-uri 'self'; connect-src 'self' https://www.google-analytics.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self'; img-src 'self' data: https://cdnjs.cloudflare.com; manifest-src 'self'; media-src 'self'; worker-src 'none'
   # Block pages from loading when they detect reflected XSS attacks
   X-XSS-Protection: 1; mode=block

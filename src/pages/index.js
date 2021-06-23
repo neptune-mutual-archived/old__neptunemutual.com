@@ -7,7 +7,6 @@ import { Header } from '../components/header'
 import { Hero } from '../components/hero'
 import { About } from '../components/about'
 import { Benefits } from '../components/benefits'
-import { Collaborate } from '../components/collaborate'
 import { Roadmap } from '../components/roadmap'
 import { Technologies } from '../components/technologies'
 import { Footer } from '../components/footer'
@@ -25,7 +24,6 @@ const IndexPage = () => (
       <About />
       <Benefits />
       <ExchangeCover />
-      <Collaborate />
       <Roadmap />
       <Technologies />
       <Footer />
