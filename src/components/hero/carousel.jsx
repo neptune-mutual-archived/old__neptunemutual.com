@@ -19,13 +19,10 @@ export const Carousel = () => {
       image1: file(relativePath: { eq: "slider/Coverage.png" }) {
         ...carouselImage
       }
-      image2: file(relativePath: { eq: "slider/Prediction market.png" }) {
+      image2: file(relativePath: { eq: "slider/Farming.png" }) {
         ...carouselImage
       }
-      image3: file(relativePath: { eq: "slider/Farming.png" }) {
-        ...carouselImage
-      }
-      image4: file(relativePath: { eq: "slider/Bond.png" }) {
+      image3: file(relativePath: { eq: "slider/Bond.png" }) {
         ...carouselImage
       }
     }
@@ -38,14 +35,10 @@ export const Carousel = () => {
     },
     {
       image: getImage(data.image2),
-      alt: 'Prediction Market'
-    },
-    {
-      image: getImage(data.image3),
       alt: 'Farming'
     },
     {
-      image: getImage(data.image4),
+      image: getImage(data.image3),
       alt: 'Bond'
     }
   ]
