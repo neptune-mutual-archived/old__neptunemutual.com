@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Trans } from '@lingui/macro'
-import { APP_URL, SEED_INVESTMENT_URL } from '../../utils/config'
+import { APP_URL, DEVELOPMENT_DOCS_URL } from '../../utils/config'
 import { FilledLink } from '../buttons/filled'
 import { OutlineLink } from '../buttons/outline'
 import * as styles from './styles.module.css'
@@ -23,8 +23,8 @@ export const Content = () => {
         </Trans>
       </p>
       <div className={styles.content_cta}>
-        <OutlineLink href={SEED_INVESTMENT_URL} className='px-7 py-3'>
-          <Trans>Seed Investment</Trans>
+        <OutlineLink href={DEVELOPMENT_DOCS_URL} className='px-7 py-3'>
+          <Trans>Development Docs</Trans>
         </OutlineLink>
         <FilledLink href={APP_URL} className='px-7 py-3' external>
           <Trans>LAUNCH APP</Trans>

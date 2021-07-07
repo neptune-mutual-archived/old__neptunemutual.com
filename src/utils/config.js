@@ -26,3 +26,5 @@ export const SEED_INVESTMENT_URL =
 export const PARTNERSHIP_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLScb__IsvO19xsrZ7QOhMnxyS7hiuA7CEMb_08E6BwQAaAXv0w/viewform'
 export const GOVERNANCE_URL = 'http://governance.neptunemutual.com/'
+export const DEVELOPMENT_DOCS_URL =
+  'https://www.npmjs.com/package/@neptunemutual/sdk'
