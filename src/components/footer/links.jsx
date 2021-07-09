@@ -11,7 +11,7 @@ import {
 
 const textLinks = [
   {
-    name: 'Documentation',
+    name: 'Docs',
     href: APP_DOCUMENTATION_URL
   },
   {
@@ -67,8 +67,7 @@ const iconLinks = [
   },
   {
     name: 'BSCScan',
-    href:
-      'https://bscscan.com/token/0xce3805a443ebb27b2a4058ec9d94dc4f9c000633',
+    href: 'https://bscscan.com/token/0xce3805a443ebb27b2a4058ec9d94dc4f9c000633',
     iconSrc: '/icons/footer/bscscan.svg'
   },
   {

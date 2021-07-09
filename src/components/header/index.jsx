@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <a href='#' className='block'>
+        <a href='/' className='block'>
           <picture>
             <source media='(min-width: 720px)' srcSet='/neptune-mutual.svg' />
             <source media='(min-width: 120px)' srcSet='/nep-icon.svg' />
@@ -21,7 +21,7 @@ export const Header = () => {
         </a>
         <nav className={styles.nav}>
           <a href={DOCUMENTATION_URL} target='_blank' rel='noopener noreferrer'>
-            documentation
+            Docs
           </a>
           <LanguageSelector />
         </nav>

@@ -24,10 +24,10 @@ export const Content = () => {
       </p>
       <div className={styles.content_cta}>
         <OutlineLink href={DEVELOPMENT_DOCS_URL} className='px-7 py-3' external>
-          <Trans>Development Docs</Trans>
+          <Trans>Developer Docs</Trans>
         </OutlineLink>
         <FilledLink href={APP_URL} className='px-7 py-3' external>
-          <Trans>LAUNCH APP</Trans>
+          <Trans>Launch App</Trans>
         </FilledLink>
       </div>
     </div>
