@@ -12,7 +12,7 @@ const data = [
   },
   {
     icon: '/icons/about/user_plus.svg',
-    title: 'Community Focused',
+    title: 'Limited Emmission',
     content:
       'There is no dual or tipple token system or a continuous token supply. NEP governance tokens are fixed and deflationary.',
     className: styles.card_2
@@ -28,7 +28,7 @@ const data = [
     icon: '/icons/about/trending_down.svg',
     title: 'Cheaper & Efficient',
     content:
-      'Neptune Mutual platform leverages cheaper transactions, higher throughput, and scalability of the Binance Smart Chain to bring you a robust set of hedging features and functionalities.',
+      'Neptune Mutual platform leverages cheaper transactions and higher throughput of Binance Smart Chain, Polygon, Fantom, and xDaiChain to bring you a robust set of hedging features and functionalities.',
     className: styles.card_4
   }
 ]
