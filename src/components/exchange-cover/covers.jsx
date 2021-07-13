@@ -51,8 +51,8 @@ export const Covers = () => {
               loading='lazy'
             />
           ))}
+          <div className='text-center text-xs'>+5 more</div>
         </div>
-        <div className='text-center text-xs mt-4'>+5 more</div>
       </div>
       <div>
         <div className='font-numbers font-medium text-base md:text-lg tracking-wider mb-6'>
@@ -68,8 +68,8 @@ export const Covers = () => {
               loading='lazy'
             />
           ))}
+          <div className='text-center text-xs'>+7 upcoming</div>
         </div>
-        <div className='text-center text-xs mt-4'>+7 upcoming</div>
       </div>
     </div>
   )

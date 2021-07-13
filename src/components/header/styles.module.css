@@ -1,15 +1,10 @@
 .header {
   @apply flex flex-col p-4 gap-4 items-center w-full;
-  @screen md {
-    @apply flex justify-center p-8;
-  }
+  @apply md:justify-center md:p-8;
 }
 
 .container {
-  @apply flex flex-col p-4 gap-4 items-center;
-  @screen md {
-    @apply flex flex-row flex-grow w-full flex-wrap justify-between items-center  max-w-screen-2xl;
-  }
+  @apply flex flex-row flex-grow flex-wrap p-4 gap-4 justify-between items-center w-full max-w-screen-2xl;
 }
 
 .nav {
