@@ -24,7 +24,7 @@ export const TERMS_OF_SERVICE_URL =
 export const SEED_INVESTMENT_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLSd-1_ekQu3S9w1edgPpA7BOjw_4oc92Wmy30Uy8KuZKpQfUXA/viewform'
 export const PARTNERSHIP_URL =
-  'https://docs.google.com/forms/d/e/1FAIpQLScb__IsvO19xsrZ7QOhMnxyS7hiuA7CEMb_08E6BwQAaAXv0w/viewform'
+  'https://docs.neptunemutual.com/community/partner-program'
 export const GOVERNANCE_URL = 'http://governance.neptunemutual.com/'
 export const DEVELOPMENT_DOCS_URL =
   'https://docs.neptunemutual.com/neptune-mutual-sdk/quickstart'
