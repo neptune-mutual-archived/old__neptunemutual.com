@@ -7,7 +7,7 @@ export const data = [
     title: 'Hand',
     iconSrc: '/icons/benefits/Hand.svg',
     content:
-      'Burn and stake your NEP tokens to create a new prediction market. Get a small portion of all fees collected in your market in BUSD and BNB. Additional rewards in NEP as well.'
+      'Get a small portion of all fees collected in your market in BUSD and BNB. Additional rewards in NEP as well.'
   },
   {
     title: 'Coin',
