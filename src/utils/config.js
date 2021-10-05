@@ -11,7 +11,7 @@ export const PROTOTYPE_URL =
 export const GET_TOKENS_URL =
   'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xcE3805A443eBb27B2A4058eC9d94dC4f9C000633'
 export const TOKEN_DESIGN_URL =
-  'https://docs.neptunemutual.com/nep-token-design'
+  'https://docs.neptunemutual.com/npm-token-design'
 export const OUR_ETHOS_URL =
   'https://docs.neptunemutual.com/community/our-ethos'
 export const CAREERS_URL = 'https://forms.gle/dJbzCXhyzwECfToT6'

@@ -7,7 +7,7 @@ export const CTA = () => {
   return (
     <div className='w-full flex flex-col items-center gap-6 md:gap-12 text-center'>
       <h4 className='text-xl md:text-4xl font-numbers md:leading-normal text-gray-400 max-w-screen-lg'>
-        Early liquidity providers receive NEP by joining the bond and farm
+        Early liquidity providers receive NPM by joining the bond and farm
         pools. Show us your support today.
       </h4>
       <div className='flex flex-wrap justify-center gap-6'>
@@ -18,7 +18,7 @@ export const CTA = () => {
           data-sal-duration='500'
           data-sal='zoom-in'
         >
-          bond nep
+          bond npm
         </OutlineLink>
         <FilledLink
           href={POOL_URL}
@@ -27,7 +27,7 @@ export const CTA = () => {
           data-sal-duration='500'
           data-sal='zoom-in'
         >
-          nep pool
+          npm pool
         </FilledLink>
       </div>
     </div>

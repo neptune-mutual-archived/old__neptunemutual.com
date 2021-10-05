@@ -14,7 +14,7 @@ const data = [
     icon: '/icons/about/user_plus.svg',
     title: 'Limited Emmission',
     content:
-      'There is no dual or tipple token system or a continuous token supply. NEP governance tokens are fixed and deflationary.',
+      'There is no dual or tipple token system or a continuous token supply. NPM governance tokens are fixed and deflationary.',
     className: styles.card_2
   },
   {

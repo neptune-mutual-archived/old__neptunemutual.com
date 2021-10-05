@@ -12,25 +12,25 @@ export const Content = () => {
         and growing liquidity to the platform.
       </p>
       <p className='mb-6'>
-        The NEP token is used by the platform for both governance and utility
+        The NPM token is used by the platform for both governance and utility
         purposes.
       </p>
 
       <ul className='pl-6 list-disc list-outside mb-8'>
-        <li>Use NEP to stake and create contracts and markets</li>
-        <li>Burn NEP to create contracts and markets</li>
+        <li>Use NPM to stake and create contracts and markets</li>
+        <li>Burn NPM to create contracts and markets</li>
         <li>
-          Use NEP to{' '}
+          Use NPM to{' '}
           <a href={GOVERNANCE_URL} target='_blank' rel='noopener noreferrer'>
             vote in the governance
           </a>{' '}
           of the platform’s future
         </li>
         <li>
-          Lock NEP to provide liquidity, secure the protocol, and yield
+          Lock NPM to provide liquidity, secure the protocol, and yield
           additional rewards
         </li>
-        <li>Hold NEP in your wallet to purchase and claim coverage</li>
+        <li>Hold NPM in your wallet to purchase and claim coverage</li>
       </ul>
       <OutlineLink
         href={GET_TOKENS_URL}
@@ -39,7 +39,7 @@ export const Content = () => {
         data-sal-duration='400'
         data-sal='zoom-out'
       >
-        Get nep tokens
+        Get npm tokens
       </OutlineLink>
     </div>
   )

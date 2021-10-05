@@ -12,7 +12,7 @@ export const Content = () => {
         guaranteed stablecoin liquidity. On the other hand, the liquidity
         providers collectively earn the coverage fees generated in the pools.
         Additionally, the platform also incentivizes the users by “airdropping”
-        a certain amount of NEP tokens to the early users on both sides.
+        a certain amount of NPM tokens to the early users on both sides.
       </p>
     </div>
   )
