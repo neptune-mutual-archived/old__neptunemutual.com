@@ -26,9 +26,9 @@ export const Content = () => {
         <OutlineLink href={DEVELOPMENT_DOCS_URL} className='px-7 py-3' external>
           <Trans>Developer Docs</Trans>
         </OutlineLink>
-        <FilledLink href={APP_URL} className='px-7 py-3' external>
+        {/* <FilledLink href={APP_URL} className='px-7 py-3' external>
           <Trans>Launch App</Trans>
-        </FilledLink>
+        </FilledLink> */}
       </div>
     </div>
   )
