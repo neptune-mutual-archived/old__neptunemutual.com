@@ -10,7 +10,7 @@ export const CTA = () => {
         Early liquidity providers receive NPM by joining the bond and farm
         pools. Show us your support today.
       </h4>
-      <div className='flex flex-wrap justify-center gap-6'>
+      {/* <div className='flex flex-wrap justify-center gap-6'>
         <OutlineLink
           href={BOND_URL}
           external
@@ -29,7 +29,7 @@ export const CTA = () => {
         >
           npm pool
         </FilledLink>
-      </div>
+      </div> */}
     </div>
   )
 }

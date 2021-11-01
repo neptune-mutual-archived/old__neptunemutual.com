@@ -32,7 +32,7 @@ export const Content = () => {
         </li>
         <li>Hold NPM in your wallet to purchase and claim coverage</li>
       </ul>
-      <OutlineLink
+      {/* <OutlineLink
         href={GET_TOKENS_URL}
         external
         className='mb-4'
@@ -40,7 +40,7 @@ export const Content = () => {
         data-sal='zoom-out'
       >
         Get npm tokens
-      </OutlineLink>
+      </OutlineLink> */}
     </div>
   )
 }
