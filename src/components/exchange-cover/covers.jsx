@@ -71,7 +71,7 @@ export const Covers = () => {
         </div>
       </div>
     </div>
-    <div className='text-xs'>The above logos do not indicate or suggest partnership with Neptune Mutual. For demonstration purpose only.</div>
+    <div className='mt-8 text-xs'>The above logos do not indicate or suggest partnership with Neptune Mutual. For demonstration purpose only.</div>
     </>
   )
 }
