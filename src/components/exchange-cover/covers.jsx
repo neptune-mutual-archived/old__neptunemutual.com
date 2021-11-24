@@ -36,6 +36,7 @@ const exchangeCovers = [
 
 export const Covers = () => {
   return (
+    <>
     <div className='flex flex-wrap gap-8 md:gap-16 mt-8 md:mt-16'>
       <div>
         <div className='font-numbers font-medium text-base md:text-lg tracking-wider mb-6'>
@@ -51,7 +52,6 @@ export const Covers = () => {
               loading='lazy'
             />
           ))}
-          <div className='text-center text-xs'>+5 more</div>
         </div>
       </div>
       <div>
@@ -68,9 +68,10 @@ export const Covers = () => {
               loading='lazy'
             />
           ))}
-          <div className='text-center text-xs'>+7 upcoming</div>
         </div>
       </div>
     </div>
+    <div className='text-xs'>The above logos do not indicate or suggest partnership with Neptune Mutual. For demonstration purpose only.</div>
+    </>
   )
 }
