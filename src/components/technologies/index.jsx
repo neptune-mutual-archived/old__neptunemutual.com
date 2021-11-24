@@ -140,9 +140,9 @@ export const Technologies = () => {
   return (
     <div
       id='technologies'
-      className='flex justify-center mb-8 md:mb-16 bg-white'
+      className='flex justify-center mb-8 -mt-8 md:my-16 md:-mt-24 bg-white -skew-y-6 transform'
     >
-      <div className='w-full max-w-screen-2xl px-6 md:px-8 text-base md:text-lg text-gray-400 py-24 md:py-32'>
+      <div className='w-full max-w-screen-2xl px-6 md:px-8 text-base md:text-lg text-gray-400 skew-y-6 transform py-24 md:py-32'>
         <h2 className='text-center font-numbers font-semibold text-black text-2xl md:text-4xl mb-16'>
           Technologies
         </h2>

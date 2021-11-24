@@ -2,7 +2,7 @@
   @apply flex justify-center pt-12 pb-12;
 
   @screen md {
-    @apply pt-24 pb-24;
+    @apply pt-36 pb-36;
   }
 }
 
