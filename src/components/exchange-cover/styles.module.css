@@ -1,8 +1,8 @@
 .exchange_cover {
-  @apply flex justify-center pt-12 pb-12;
+  @apply flex justify-center pt-12 pb-32;
 
   @screen md {
-    @apply pt-36 pb-36;
+    @apply pt-24 pb-56;
   }
 }
 
