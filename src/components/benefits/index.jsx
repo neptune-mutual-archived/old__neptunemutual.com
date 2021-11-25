@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { Content } from './content'
 import { Tabs } from './tabs'
-import { CTA } from './cta'
 import * as styles from './styles.module.css'
 
 export const Benefits = () => {
@@ -12,9 +11,6 @@ export const Benefits = () => {
           <Content />
         </div>
         <Tabs />
-        <div className='max-w-screen-2xl px-8 flex-grow mx-auto'>
-          <CTA />
-        </div>
       </div>
     </div>
   )
