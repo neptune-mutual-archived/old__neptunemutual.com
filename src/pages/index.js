@@ -7,7 +7,6 @@ import { Header } from '../components/header'
 import { Hero } from '../components/hero'
 import { About } from '../components/about'
 import { Benefits } from '../components/benefits'
-import { Technologies } from '../components/technologies'
 import { Footer } from '../components/footer'
 import { ExchangeCover } from '../components/exchange-cover'
 
@@ -23,7 +22,6 @@ const IndexPage = () => (
       <About />
       <Benefits />
       <ExchangeCover />
-      <Technologies />
       <Footer />
     </div>
   </>
