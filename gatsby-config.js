@@ -5,7 +5,7 @@ module.exports = {
     title: `Neptune Mutual`,
     description: `Neptune Mutual provides you with guaranteed stablecoin liquidity to reduce your risk exposure by hedging against possible capital risks and smart contract vulnerabilities.`,
     author: `@neptunemutual`,
-    ogImage: `https://neptunemutual.com/og/home.png`
+    ogImage: `https://neptunemutual.com/og/nm.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,8 +27,8 @@ module.exports = {
         trackingId: 'G-LF5XJ57N3H',
         head: false,
         // Defers execution of google analytics script after page load
-        defer: true,
-      },
+        defer: true
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
