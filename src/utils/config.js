@@ -4,7 +4,7 @@ export const APP_URL = 'https://app.neptunemutual.com/'
 export const BOND_URL = 'https://app.neptunemutual.com/bond'
 export const POOL_URL = 'https://app.neptunemutual.com/pool'
 
-export const DOCUMENTATION_URL = 'http://docs.neptunemutual.com/'
+export const DOCUMENTATION_URL = 'https://docs.neptunemutual.com/'
 export const APP_DOCUMENTATION_URL = 'https://docs.neptunemutual.com/'
 export const PROTOTYPE_URL =
   'https://www.figma.com/proto/qlAl47lGyUHlpRPSCkYDhU/App-Prototype?scaling=min-zoom&page-id=0%3A1&node-id=3%3A279&hide-ui=1'
@@ -25,6 +25,6 @@ export const SEED_INVESTMENT_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLSd-1_ekQu3S9w1edgPpA7BOjw_4oc92Wmy30Uy8KuZKpQfUXA/viewform'
 export const PARTNERSHIP_URL =
   'https://docs.neptunemutual.com/community/partner-program'
-export const GOVERNANCE_URL = 'http://governance.neptunemutual.com/'
+export const GOVERNANCE_URL = 'https://governance.neptunemutual.com/'
 export const DEVELOPMENT_DOCS_URL =
   'https://docs.neptunemutual.com/sdk/quickstart'
